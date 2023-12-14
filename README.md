@@ -2,6 +2,8 @@
 
 This activity is broken down into various pieces of code to understand the dynamics of heart disease and choose a model using various variables to note potential predictions for heart disease. 
 
+A presentation of our analysis can be found [here](https://github.com/oliverkisza/Final-Project-Team-1/blob/main/Understanding%20Heart%20Disease.pdf)
+
 <summary>Contents</summary>
   <ol>
     <li><a href="#desc">Description</a></li>
