@@ -81,7 +81,52 @@ Data cleaning was completed using Python for both datasets. The following are br
 
 ## Step 2: Compiling, Training, & Evaluation
 
-xxxxxxxxxxxxxxxxxxxxxxxxx
+Both datasets were stored in Github and read through Spark for light querying and to have a better understanding of the data. 
+**Spark notebook https://raw.githubusercontent.com/oliverkisza/Final-Project-Team-1/main/Spark_Heart_Data.ipynb
+
+- First we read the 2020 cleaned data as a csv and created a pandas dataframe from it.
+- Repeated the same steps to create a pandas dataframe for the 2022 data as well.
+- Created a temporary view of the pandas dataframe using createOrReplaceTempView and named it 'heart20'.  This allows us to read the data as a table
+  and allows us to run Spark SQL queries.
+- We cached the table "heart20".
+- Ran the following query so that we could see the total count of Yes/No for HeartDisease.  We also ran some percentages to check for any relations but realized
+  these were scewed due to inbalanced data:
+
+a2020q1 = """
+SELECT
+  HeartDisease,
+  COUNT(*) AS TOTAL,
+  ROUND(COUNT(CASE WHEN Smoking = 'Yes' THEN Smoking END) / TOTAL * 100,2) AS PERCENT_SMOKING,
+  ROUND(COUNT(CASE WHEN AlcoholDrinking = 'Yes' THEN AlcoholDrinking END) / TOTAL * 100,2) AS PERCENT_DRINKERS,
+  ROUND(COUNT(CASE WHEN Stroke = 'Yes' THEN Stroke END) / TOTAL * 100,2) AS PERCENT_STROKE,
+  ROUND(COUNT(CASE WHEN Diabetic = 'Yes' THEN Diabetic END) / TOTAL * 100,2) AS PERCENT_DIABETIC,
+  ROUND(COUNT(CASE WHEN Asthma = 'Yes' THEN Asthma END) / TOTAL * 100,2) AS PERCENT_ASTHMA,
+  ROUND(COUNT(CASE WHEN KidneyDisease = 'Yes' THEN KidneyDisease END) / TOTAL * 100,2) AS PERCENT_KIDNEY_DISEASE,
+  ROUND(COUNT(CASE WHEN SkinCancer = 'Yes' THEN SkinCancer END) / TOTAL * 100,2) AS PERCENT_SKIN_CANCER
+FROM heart20
+Group by HeartDisease
+ORDER BY HeartDisease DESC
+"""
+spark.sql(a2020q1).show()
+
+-Ran a second query to show the General Health of the population and what percentage was at risk.  Here we noticed whoever considered themselves
+having excellent or very good health had a very low percentage of being at risk, while those who considered themselves fair or poor had the highest risk.
+
+a2020q2 = """
+SELECT
+  GeneralHealth,
+  Count(GeneralHealth) AS Total,
+  COUNT(CASE WHEN HeartDisease = 'Yes' THEN HeartDisease END) AS HighRiskCount,
+  ROUND(HighRiskCount /  Total * 100,2) AS Percent_At_HighRisk
+FROM heart20
+GROUP BY GeneralHealth
+ORDER BY Percent_At_HighRisk ASC
+"""
+spark.sql(a2020q2).show()
+
+-Uncached the table and exported our dataframe to a csv for modeling.
+-Created a temporary view of the 2022 dataframe and ran similar queries which presented the same conclusions as the 2020 data.
+-Uncached the table and exported our dataframe as a csv for modeling.
 
 <a name="optimize"></a>
 
