@@ -162,8 +162,8 @@ Several steps were taken to improve our models:
     - Oversampling
     - Undersampling
     - A combination of both
- We experimented with different balances of the 1 and 0 values in the target column (in training data only), but were unable to substantially improve model performance.
-Our model(s) based on the resampled data sacrificed some precision for improved recall scores, which are more relevant when predicting if patients have heart disease.
+ 
+We experimented with different balances of the 1 and 0 values in the target column (in training data only), but were unable to substantially improve model performance. Our model(s) based on the resampled data sacrificed some precision for improved recall scores, which are more relevant when predicting if patients have heart disease.
 
  <a name="results"></a>
  ## Step 4: Results
