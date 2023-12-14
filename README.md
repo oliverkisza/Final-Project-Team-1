@@ -129,7 +129,7 @@ spark.sql(a2020q2).show()
 -Uncached the table and exported our dataframe as a csv for modeling.
 
 **First Model Run**
-https://raw.githubusercontent.com/oliverkisza/Final-Project-Team-1/main/first_heart_disease_model_2022.ipynb
+[https://raw.githubusercontent.com/oliverkisza/Final-Project-Team-1/main/first_heart_disease_model_2022.ipynb](https://raw.githubusercontent.com/oliverkisza/Final-Project-Team-1/main/first_heart_disease_model_2022.ipynb)
 
 -Read our cleaned data as named our dataframe 'df'.
 -Dropped columns which were not binary features.
