@@ -25,7 +25,7 @@ Due to the dataset being completed by the CDC and the ability to compare and con
 
 <a name="dpp"></a>
 
-## Step 1: Data Preprocessing<
+## Step 1: Data Preprocessing
 
 In order to best understand and target variables to use in the model, the group sought a number of techniques and tools to understand both datasets. 
 ## Step 2: Compiling, Training, & Evaluation
