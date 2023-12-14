@@ -82,7 +82,7 @@ Data cleaning was completed using Python for both datasets. The following are br
 ## Step 2: Compiling, Training, & Evaluation
 
 Both datasets were stored in Github and read through Spark for light querying and to have a better understanding of the data. 
-**Spark notebook https://raw.githubusercontent.com/oliverkisza/Final-Project-Team-1/main/Spark_Heart_Data.ipynb
+** [Spark notebook](https://raw.githubusercontent.com/oliverkisza/Final-Project-Team-1/main/Spark_Heart_Data.ipynb)
 
 - First we read the 2020 cleaned data as a csv and created a pandas dataframe from it.
 - Repeated the same steps to create a pandas dataframe for the 2022 data as well.
