@@ -64,6 +64,18 @@ Data cleaning was completed using Python for both datasets. The following are br
 - Created dummy variables ideal for binary categories
 - Mapped ordinal variables from least to greatest starting from 0 (GeneralHealth and AgeCategory)
 
+**2022 Dataset** and [2022 cleaning code](https://github.com/oliverkisza/Final-Project-Team-1/blob/main/data_cleaning_2022.ipynb)
+
+- 39 feature columns (heart disease indicators)
+- 1 target column (“HadHeartAttack”)
+- ~246,000 rows
+
+- Removed columns (“State”, “HadDiabetes”, etc)
+- Renamed other columns for clarity such as “SleepTime”: “HoursOfSleep”
+- Removed NaN
+- Created dummy variables ideal for binary categories (“Sex”, “PhysicalActivities”, “HadHeartAttack”, “HadAngina”, etc)
+= Mapped ordinal variables from least to greatest starting from 0 (“GeneralHealth”, “AgeCategory”, “LastCheckupTime”, “RemovedTeeth”, “SmokerStatus”, and “ECigaretteUsage”)
+
 
 <a name="cte"></a>
 
