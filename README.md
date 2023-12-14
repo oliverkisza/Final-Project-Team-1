@@ -137,10 +137,13 @@ spark.sql(a2020q2).show()
 -Fit the model using our training data.
 -Generated testing predictions and our confusion matrix.
 -Created our training and testing classification reports.
+
 **Training Report**
+
 ![image](https://github.com/oliverkisza/Final-Project-Team-1/assets/134735921/c10a6a68-4fdf-4bd7-9e2b-6e61e0077b60)
 
 **Testing Report**
+
 ![image](https://github.com/oliverkisza/Final-Project-Team-1/assets/134735921/2d49aa0c-70d7-473e-aa21-8509fd3cc470)
 
 -Scaled our data and used 3 hidden layers.
