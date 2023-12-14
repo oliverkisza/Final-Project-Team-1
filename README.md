@@ -51,6 +51,18 @@ The group also used Tableau to visually examine the data. You can examine the da
 
 ## Step 1b: Data Cleaning
 
+Data cleaning was completed using Python for both datasets. The following are breakdown of both data sets: 
+
+**2020 Dataset** and [2020 cleaning code](https://github.com/oliverkisza/Final-Project-Team-1/blob/main/FA_data_cleaning_2020.ipynb)
+
+- 17 feature columns (heart disease indicators)
+- 1 target column (HeartDisease)
+- ~320,000 rows
+- Renamed columns to match identical columns in heart_2022 with slightly different names(ex: GenHealth:GeneralHealth; PhysicaHealth: PhysicalHealthDays; DiffWalking:DifficultyWalking,etc.)
+- Renamed other columns for clarity such as SleepTime:HoursOfSleep
+- Removed rows with ambiguous data: Diabetic (Yes, during pregnancy, No, borderline diabetes) to yield binary column
+- Created dummy variables ideal for binary categories
+- Mapped ordinal variables from least to greatest starting from 0 (GeneralHealth and AgeCategory)
 
 
 <a name="cte"></a>
