@@ -134,7 +134,7 @@ spark.sql(a2020q2).show()
 -Read our cleaned data as named our dataframe 'df'.
 -Dropped columns which were not binary features.
 -Fit the model using our training data.
--Gerated testing predictions and our confusion matrix.
+-Generated testing predictions and our confusion matrix.
 -Created our training and testing classification reports.
 **Training Report**
 ![image](https://github.com/oliverkisza/Final-Project-Team-1/assets/134735921/c10a6a68-4fdf-4bd7-9e2b-6e61e0077b60)
