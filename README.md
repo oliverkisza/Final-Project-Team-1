@@ -168,7 +168,9 @@ Several steps were taken to improve our models:
 We experimented with different balances of the 1 and 0 values in the target column (in training data only), but were unable to substantially improve model performance. Our model(s) based on the resampled data sacrificed some precision for improved recall scores, which are more relevant when predicting if patients have heart disease.
 
 ### SMOTE (Sample Minority Oversampling Technique)
+
 [Oversampling Optimization](https://github.com/oliverkisza/Final-Project-Team-1/blob/main/Testing%2C%20SMOTE%2C%20Random%20Forests%20-%202020%20Data.ipynb)
+
 - There’s an imbalance ratio of No responses for heart disease to Yes responses. This causes the accuracy metric to be biased and not preferable. 
 - SMOTE alters the training set by increasing the number of Yes data points to match the volume of No data points. 
 - Unlike Random Oversampling where the minority data is duplicated, SMOTE is Interpolation Oversampling that synthesizes new data.
@@ -180,6 +182,7 @@ We experimented with different balances of the 1 and 0 values in the target colu
 ![SMOTE comparison](https://github.com/oliverkisza/Final-Project-Team-1/assets/137104602/308ed154-5129-41a5-b8fd-e637d02a4364)
 
 ### Random Forests
+
 - Random Forests is an ensemble learning method. Instead of one complex decision tree, it samples the data and constructs a multitude of simple decision trees.
 - Unlike normal decision trees, Random Forests is robust against overfitting. SMOTE runs the risk of introducing noisy instances and overfitting problems.
 
@@ -200,7 +203,9 @@ We experimented with different balances of the 1 and 0 values in the target colu
 
  ## Step 5: Analysis
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Overall, our analysis did not meet our expectations of demonstrating meaningful predictive power at least 75% classification accuracy or 0.80 R-squared.
+
+
 
 ## Dependencies
 
