@@ -2,21 +2,42 @@
 
 This activity is broken down into xxxxxxxxxxxxxxxxxxxxx
 
+<summary>Contents</summary>
+  <ol>
+    <li><a href="#desc">Description</a></li>
+    <li><a href="#dpp">Data Preprocessing</a></li>
+    <li><a href="#cte">Compiling, Training, & Evaluation</a></li>
+    <li><a href="#optimize">Optimization</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#Analysis">Report & Analysis</a></li>
+  </ol>
+
 ## Description
+<a name="desc"></a>
 
 xxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## Step 1: Preprocess the Data
+<a name="dpp"></a>
 
 xxxxxxxxxxxxxxx
 ## Step 2: Compile, Train, and Evaluate the Model
+<a name="cte"></a>
 
 xxxxxxxxxxxxxxxxxxxxxxxxx
+
 ## Step 3: Optimize the Model
+<a name="optimize"></a>
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  
- ## Step 4: Write a Report on Model & It Optimization
+ ## Step 4: Results
+<a name="results"></a>
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+ ## Step 5: Analysis
+<a name="Analysis"></a>
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
