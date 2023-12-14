@@ -210,7 +210,7 @@ Overall, our analysis did not meet our expectations of demonstrating meaningful 
 
 Our models consistently noted high precisions at the "0" or "No Heart Disease" with fairly excellent recall and f1-scores. However, none of our models could effectively predict "1" or who had heart disease.
 
-Despite SMOTE, Random Forest, and Undersampling as well as combined techniques, our model was never able to get near our 75% rate we were shooting for. We do feel though our track was important because we found professional data scientists working the same angles in [their research.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9322725/).
+Despite SMOTE, Random Forest, and Undersampling as well as combined techniques, our model was never able to get near our 75% rate we were shooting for. We do feel though our track was important because we found professional data scientists working the same angles in [their research.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9322725/)
 
 ## Dependencies
 
