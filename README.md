@@ -194,9 +194,6 @@ We experimented with different balances of the 1 and 0 values in the target colu
 - High recall: for the population that does have heart disease, the model is correctly identifying a majority of them; few false negatives. 
 - False positives will lead to further testing and safety precautions. A high number of false negatives may result in heart disease being untreated which might have serious consequences.
 
-
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
 <a name="Analysis"></a>
 
  ## Step 5: Analysis
