@@ -25,7 +25,7 @@ Due to the dataset being completed by the CDC and the ability to compare and con
 
 <a name="dpp"></a>
 
-## Step 1: Data Preprocessing
+## Step 1a: Data Preprocessing
 
 In order to best understand and target variables to use in the model, the group sought a number of techniques and tools to understand both datasets. 
 
@@ -47,6 +47,10 @@ The group also used Tableau to visually examine the data. You can examine the da
 ![Screenshot 2023-12-14 133458](https://github.com/oliverkisza/Final-Project-Team-1/assets/18508699/a94bbf30-d73d-4284-bd96-868415b8b3b9)
 
 ![Screenshot 2023-12-14 133439](https://github.com/oliverkisza/Final-Project-Team-1/assets/18508699/31128b36-2c65-4920-8fa4-a1b66099ccc2)
+
+
+## Step 1b: Data Cleaning
+
 
 
 <a name="cte"></a>
