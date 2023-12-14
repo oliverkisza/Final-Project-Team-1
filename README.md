@@ -1,6 +1,6 @@
 # Python Rutgers Bootcamp Challenge - Project Four - Heart Disease Understanding 
 
-This activity is broken down into xxxxxxxxxxxxxxxxxxxxx
+This activity is broken down into various pieces of code to understand the dynamics of heart disease and choose a model using various variables to note potential predictions for heart disease. 
 
 <summary>Contents</summary>
   <ol>
