@@ -90,7 +90,7 @@ Both datasets were stored in Github and read through Spark for light querying an
   and allows us to run Spark SQL queries.
 - We cached the table "heart20".
 - Ran the following query so that we could see the total count of Yes/No for HeartDisease.  We also ran some percentages to check for any relations but realized
-  these were scewed due to inbalanced data:
+  these were skewed due to imbalanced data:
 
 a2020q1 = """
 SELECT
