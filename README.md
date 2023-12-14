@@ -28,23 +28,44 @@ Due to the dataset being completed by the CDC and the ability to compare and con
 ## Step 1: Data Preprocessing
 
 In order to best understand and target variables to use in the model, the group sought a number of techniques and tools to understand both datasets. 
-## Step 2: Compiling, Training, & Evaluation
+
+In an optional data evaluation, the group used [IBM's SPSS](https://www.ibm.com/spss) to do quick stepwise multiple regression analyses to ascertain the top variables to use in the model. 
+
+![Screenshot 2023-12-14 121232](https://github.com/oliverkisza/Final-Project-Team-1/assets/18508699/224fcdbe-6538-49c2-925f-f341dd184ceb)
+
+For the 2020 dataset set, **Heart Disease (Yes/No)** was used as primary dependent variable and all others were used as independent variables. Similar regression models were run with the 2022 data which ran two different dependent variables, **Heart Attack (Yes/No)** and **High Risk Last Year (Yes/No)**. 
+
+![Screenshot 2023-12-14 121608](https://github.com/oliverkisza/Final-Project-Team-1/assets/18508699/5cbd3ffa-51f4-4e32-a898-7c62a1395cbf)
+
+There were not large r2 or correlations in any of the analyses we saw, but it did give us some directions on the potential usage for variables in the models. 
+
+The group also used Tableau to visually examine the data. You can examine the data yourself in the following public Tableau pages: 
+
+* [Heart Disease in America - 2020](https://public.tableau.com/app/profile/christopher.manfredi/viz/HeartDiseaseInAmerica/HeartDiseaseinAmerica#1)
+* [Heart Disease in America - 2022](https://public.tableau.com/app/profile/christopher.manfredi/viz/HeartAttackInAmerica-2022/HeartDiseaseinAmerica-2022?publish=yes)
+
 <a name="cte"></a>
+
+## Step 2: Compiling, Training, & Evaluation
 
 xxxxxxxxxxxxxxxxxxxxxxxxx
 
-## Step 3: Optimize the Model
 <a name="optimize"></a>
 
+## Step 3: Optimize the Model
+
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
- 
+
+ <a name="results"></a>
  ## Step 4: Results
-<a name="results"></a>
+
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
- ## Step 5: Analysis
 <a name="Analysis"></a>
+
+ ## Step 5: Analysis
+
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
