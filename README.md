@@ -156,11 +156,20 @@ print(f"Loss: {model_loss}, Accuracy: {model_accuracy}")
 
 ## Step 3: Optimize the Model
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Several steps were taken to improve our models:
+- Binning certain column data (manually mapping ordinal data)
+- Applied various resampling techniques;
+    - Oversampling
+    - Undersampling
+    - A combination of both
+ We experimented with different balances of the 1 and 0 values in the target column (in training data only), but were unable to substantially improve model performance.
+Our model(s) based on the resampled data sacrificed some precision for improved recall scores, which are more relevant when predicting if patients have heart disease.
 
  <a name="results"></a>
  ## Step 4: Results
 
+A lower precision means more false positives, but if this trade off results in catching a higher proportion of people who actually have heart disease, we believe it is somewhat reasonable.
+We were unable to substantially improve model performance, primarily due to the effect that resampling had on the data - it created some noise, reducing some of the important information and inflating some of the non-important information. 
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
