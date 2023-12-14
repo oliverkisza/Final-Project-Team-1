@@ -128,6 +128,31 @@ spark.sql(a2020q2).show()
 -Created a temporary view of the 2022 dataframe and ran similar queries which presented the same conclusions as the 2020 data.
 -Uncached the table and exported our dataframe as a csv for modeling.
 
+**First Model Run**
+https://raw.githubusercontent.com/oliverkisza/Final-Project-Team-1/main/first_heart_disease_model_2022.ipynb
+
+-Read our cleaned data as named our dataframe 'df'.
+-Dropped columns which were not binary features.
+-Fit the model using our training data.
+-Gerated testing predictions and our confusion matrix.
+-Created our training and testing classification reports.
+**Training Report**
+![image](https://github.com/oliverkisza/Final-Project-Team-1/assets/134735921/c10a6a68-4fdf-4bd7-9e2b-6e61e0077b60)
+
+**Testing Report**
+![image](https://github.com/oliverkisza/Final-Project-Team-1/assets/134735921/2d49aa0c-70d7-473e-aa21-8509fd3cc470)
+
+-Scaled our data and used 3 hidden layers.
+-Fit the model and ran 20 epochs.
+-Calculated weights for each feature.
+-Calculate accuracy of the model using the following code:
+
+model_loss, model_accuracy = nn.evaluate(X_test_scaled,y_test,verbose=2)
+print(f"Loss: {model_loss}, Accuracy: {model_accuracy}")
+
+![image](https://github.com/oliverkisza/Final-Project-Team-1/assets/134735921/b2def1ea-ea0b-4e42-b2ef-756a789545ca)
+
+
 <a name="optimize"></a>
 
 ## Step 3: Optimize the Model
