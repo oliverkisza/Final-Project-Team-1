@@ -15,11 +15,18 @@ This activity is broken down into various pieces of code to understand the dynam
 ## Description
 <a name="desc"></a>
 
-xxxxxxxxxxxxxxxxxxxxxxxxx
+The purpose of this analysis is to ascertain possible models for the prediction of heart disease. Our group chose the [following dataset from Kaggle](https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease/) which was itself collected from the CDC's [Behavioral Risk Factor Surveillance System (BRFSS)](https://www.cdc.gov/brfss/index.html). Per the CDC, the BRFSS "completes more than 400,000 adult interviews each year, making it the largest continuously conducted health survey system in the world."
+
+![Screenshot 2023-12-14 113319](https://github.com/oliverkisza/Final-Project-Team-1/assets/18508699/ca14849d-d5d9-4c1c-a943-cc6e848c27d0)
+
+
+Due to the dataset being completed by the CDC and the ability to compare and contrast recent datasets of heart disease data (2020 and 2022 data), our group felt this could be a great way to predict potential heart disease across the American populace. 
+
 
 ## Step 1: Preprocess the Data
 <a name="dpp"></a>
 
+## Step 1: Preprocess the Data
 xxxxxxxxxxxxxxx
 ## Step 2: Compile, Train, and Evaluate the Model
 <a name="cte"></a>
