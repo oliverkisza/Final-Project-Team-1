@@ -2,6 +2,8 @@
 
 This activity is broken down into various pieces of code to understand the dynamics of heart disease and choose a model using various variables to note potential predictions for heart disease. 
 
+A presentation of our analysis can be found [here](https://github.com/oliverkisza/Final-Project-Team-1/blob/main/Understanding%20Heart%20Disease.pdf)
+
 <summary>Contents</summary>
   <ol>
     <li><a href="#desc">Description</a></li>
@@ -135,10 +137,13 @@ spark.sql(a2020q2).show()
 -Fit the model using our training data.
 -Generated testing predictions and our confusion matrix.
 -Created our training and testing classification reports.
+
 **Training Report**
+
 ![image](https://github.com/oliverkisza/Final-Project-Team-1/assets/134735921/c10a6a68-4fdf-4bd7-9e2b-6e61e0077b60)
 
 **Testing Report**
+
 ![image](https://github.com/oliverkisza/Final-Project-Team-1/assets/134735921/2d49aa0c-70d7-473e-aa21-8509fd3cc470)
 
 -Scaled our data and used 3 hidden layers.
@@ -165,19 +170,47 @@ Several steps were taken to improve our models:
  
 We experimented with different balances of the 1 and 0 values in the target column (in training data only), but were unable to substantially improve model performance. Our model(s) based on the resampled data sacrificed some precision for improved recall scores, which are more relevant when predicting if patients have heart disease.
 
+### SMOTE (Sample Minority Oversampling Technique)
+
+[Oversampling Optimization](https://github.com/oliverkisza/Final-Project-Team-1/blob/main/Testing%2C%20SMOTE%2C%20Random%20Forests%20-%202020%20Data.ipynb)
+
+- There’s an imbalance ratio of No responses for heart disease to Yes responses. This causes the accuracy metric to be biased and not preferable. 
+- SMOTE alters the training set by increasing the number of Yes data points to match the volume of No data points. 
+- Unlike Random Oversampling where the minority data is duplicated, SMOTE is Interpolation Oversampling that synthesizes new data.
+- Creates synthetic samples by taking a random instance of the minority class, finding its k-nearest neighbors and placing an new instance at a random distance between.
+- Also ran the model with ADASYN, SMOTETomek & and SMOTEENN. SMOTE performed the best out of all of them.
+
+![SMOTE changes](https://github.com/oliverkisza/Final-Project-Team-1/assets/137104602/9f61bc7e-2f63-42be-b17f-4577e1cc0a24)
+
+![SMOTE comparison](https://github.com/oliverkisza/Final-Project-Team-1/assets/137104602/308ed154-5129-41a5-b8fd-e637d02a4364)
+
+### Random Forests
+
+- Random Forests is an ensemble learning method. Instead of one complex decision tree, it samples the data and constructs a multitude of simple decision trees.
+- Unlike normal decision trees, Random Forests is robust against overfitting. SMOTE runs the risk of introducing noisy instances and overfitting problems.
+
+
+![RF changes](https://github.com/oliverkisza/Final-Project-Team-1/assets/137104602/bc93c6b0-7e2f-435f-8301-d38e2017f3db)
+
  <a name="results"></a>
  ## Step 4: Results
+ 
+![Screenshot 2023-12-11 200612](https://github.com/oliverkisza/Final-Project-Team-1/assets/137104602/b4fd472f-2deb-4c46-80f9-eb1c152fc038)
 
-A lower precision means more false positives, but if this trade off results in catching a higher proportion of people who actually have heart disease, we believe it is somewhat reasonable.
-We were unable to substantially improve model performance, primarily due to the effect that resampling had on the data - it created some noise, reducing some of the important information and inflating some of the non-important information. 
-
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+- Through SMOTE + Random Forests, the model classification report had low precision and high recall for the population with heart disease, which is preferable.
+- Low precision: the model is incorrectly predicting heart disease for people who don’t have it; many false positives. 
+- High recall: for the population that does have heart disease, the model is correctly identifying a majority of them; few false negatives. 
+- False positives will lead to further testing and safety precautions. A high number of false negatives may result in heart disease being untreated which might have serious consequences.
 
 <a name="Analysis"></a>
 
  ## Step 5: Analysis
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Overall, our analysis did not meet our expectations of demonstrating meaningful predictive power at least 75% classification accuracy or 0.80 R-squared.
+
+Our models consistently noted high precisions at the "0" or "No Heart Disease" with fairly excellent recall and f1-scores. However, none of our models could effectively predict "1" or who had heart disease.
+
+Despite SMOTE, Random Forest, and Undersampling as well as combined techniques, our model was never able to get near our 75% rate we were shooting for. We do feel though our track was important because we found professional data scientists working the same angles in [their research.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9322725/)
 
 ## Dependencies
 
